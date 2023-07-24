@@ -22,4 +22,4 @@ Po vyřešení předchozího problému nebyly při řešení tohoto problému ž
 Dalším přístupem mohlo být použití jiné datové struktury, například hašovací tabulky nebo binárního vyhledávacího stromu, nicméně prefixový strom je efektivnějším řešením pro směrování na základě prefixů, protože poskytuje jednodušší vyhledávací algoritmus, menší spotřebu paměti a podporuje vysokou rychlost vyhledávání.
 Tato struktura je ideální pro další škálování, protože umožňuje poměrně snadno ukládat velké množství záznamů.
 Pro zlepšení implementace je možné strukturu prefixového stromu optimalizovat, například komprimovat cesty nebo použít vyvažovací algoritmy pro snížení hloubky stromu
-Tato úloha zabrala mnohem méně času díky včasnému seznámení se s teorií a obeznámení se s implementací takového algoritmu.
+Tento úkol zabral mnohem méně času díky tomu, že jsem se s podobným algoritmem seznámil již dříve.
