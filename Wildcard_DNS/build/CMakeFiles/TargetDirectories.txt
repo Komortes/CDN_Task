@@ -1,0 +1,3 @@
+/home/komortes/code/CDN_Task/Wildcard_DNS/build/CMakeFiles/Wildcard_DNS.dir
+/home/komortes/code/CDN_Task/Wildcard_DNS/build/CMakeFiles/edit_cache.dir
+/home/komortes/code/CDN_Task/Wildcard_DNS/build/CMakeFiles/rebuild_cache.dir

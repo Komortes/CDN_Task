@@ -1,0 +1,3 @@
+/home/komortes/code/CDN_Task/CDN_DNS/build/CMakeFiles/CDN_DNS.dir
+/home/komortes/code/CDN_Task/CDN_DNS/build/CMakeFiles/edit_cache.dir
+/home/komortes/code/CDN_Task/CDN_DNS/build/CMakeFiles/rebuild_cache.dir

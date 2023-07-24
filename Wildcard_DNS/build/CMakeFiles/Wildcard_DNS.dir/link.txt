@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/Wildcard_DNS.dir/3_task.c.o CMakeFiles/Wildcard_DNS.dir/Trie.c.o -o Wildcard_DNS 

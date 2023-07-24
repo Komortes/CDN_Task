@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/CDN_DNS.dir/dns.c.o CMakeFiles/CDN_DNS.dir/Reader.c.o CMakeFiles/CDN_DNS.dir/Trie.c.o -o CDN_DNS 
