@@ -11,4 +11,4 @@ typedef struct {
 
 Record* readData(const char* filename, int* size);
 
-#endif //CDN_DNS_H
+#endif // CDN_DNS_H

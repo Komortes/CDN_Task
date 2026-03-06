@@ -10,14 +10,14 @@ int main(void) {
         return 1;
     }
 
-    int patterns_size = sizeof(patterns) / sizeof(patterns[0]);
-    for (int i = 0; i < patterns_size; i++) {
-        insert(root, patterns[i].pattern); 
+    size_t patterns_size = sizeof(patterns) / sizeof(patterns[0]);
+    for (size_t i = 0; i < patterns_size; i++) {
+        insert(root, patterns[i].pattern);
     }
 
-    int tests_size = sizeof(tests) / sizeof(tests[0]);
+    size_t tests_size = sizeof(tests) / sizeof(tests[0]);
     int passed_tests = 0;
-    for (int i = 0; i < tests_size; i++) {
+    for (size_t i = 0; i < tests_size; i++) {
         int result = search(root, tests[i].address);
         if (result == tests[i].expectedResult) {
             passed_tests++;
@@ -26,7 +26,10 @@ int main(void) {
         }
     }
 
-    printf("Passed tests: %d out of %d\n", passed_tests, tests_size);
+    printf("Wildcard DNS test run\n");
+    printf("Patterns loaded: %zu\n", patterns_size);
+    printf("Passed tests: %d out of %zu\n", passed_tests, tests_size);
+
     deleteTrie(root);
-    return 0;
+    return passed_tests == (int)tests_size ? 0 : 1;
 }

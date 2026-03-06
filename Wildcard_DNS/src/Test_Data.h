@@ -1,12 +1,12 @@
-#ifndef TESTS
-#define TESTS
+#ifndef WILDCARD_DNS_TEST_DATA_H
+#define WILDCARD_DNS_TEST_DATA_H
 
 struct Test {
     const char *address;
     int expectedResult;
 };
 
-struct Test tests[] = {
+static const struct Test tests[] = {
     {"q.w.e.r.t.y.bbb.cc.d", 1}, // match to *.bbb.cc.d
     {"z.y.x.w.v.u", 0}, // no match
     {"g.h.i.j", 1}, // match to g.h.i.*
@@ -55,6 +55,9 @@ struct Test tests[] = {
     {"y.z.a.b", 1}, // match to y.*.a.b
     {"c.d.e.f", 1}, // match to c.*.e.f
     {"g.h.i.j", 1}, // match to g.*.i.j
+    {"net", 0}, // *.net requires at least one label before net
+    {"g.h", 0}, // no configured suffix, prefix, or infix pattern matches
+    {"a.c.d", 0}, // a.*.c.d requires at least one label in the wildcard segment
 };
 
 #endif

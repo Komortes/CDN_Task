@@ -1,11 +1,11 @@
-#ifndef PATTERNS
-#define PATTERNS
+#ifndef WILDCARD_DNS_PATTERNS_H
+#define WILDCARD_DNS_PATTERNS_H
 
 struct Pattern {
     const char *pattern;
 };
 
-struct Pattern patterns[] = {
+static const struct Pattern patterns[] = {
     {"*.bbb.cc.d"},
     {"g.h.i.*"},
     {"*.j.k"},
@@ -50,6 +50,9 @@ struct Pattern patterns[] = {
     {"i.*.k.l"},
     {"m.*.o.p"},
     {"q.*.s.t"},
+    {"y.*.a.b"},
+    {"c.*.e.f"},
+    {"g.*.i.j"},
 };
 
-#endif 
+#endif

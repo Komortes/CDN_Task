@@ -1,0 +1,44 @@
+# macOS
+.DS_Store
+
+# Editors
+.vscode/
+.idea/
+
+# Generic build outputs
+*.o
+*.obj
+*.out
+*.a
+*.lib
+*.so
+*.dylib
+*.dll
+*.exe
+
+# CMake
+/build/
+cmake-build-*/
+CMakeCache.txt
+CMakeFiles/
+CTestTestfile.cmake
+Testing/
+DartConfiguration.tcl
+cmake_install.cmake
+compile_commands.json
+Makefile
+build.ninja
+.ninja_deps
+.ninja_log
+
+# Project-local build directories
+/CDN_DNS/build/
+/Wildcard_DNS/build/
+
+# Generated binaries
+/CDN_DNS/CDN_DNS
+/Wildcard_DNS/Wildcard_DNS
+
+# Lua native module builds
+/Lua_Bonus/*.so
+/Lua_Bonus/*.dylib
